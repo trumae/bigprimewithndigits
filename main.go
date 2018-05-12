@@ -22,7 +22,8 @@ func main() {
 	}
 
 	digits := "0123456789"
-	for idx, el := range banner {
+	for idx := n - 1; idx >= 0; idx-- {
+		el := banner[idx]
 		if el != '\n' {
 			nbanner := banner
 			for _, c := range digits {
